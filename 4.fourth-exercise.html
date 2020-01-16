@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .firstrow {
+            background-color:#FFFFAA;
+            color:red;
+            text-align: center;
+        }
+       
+        .otherrows {
+            background-color: rgba(0, 204, 255, 0.87);
+        }
+        
+        .inputforms {
+            background-color:rgba(204, 255, 204, 0.945);
+            width: 94%;
+        }
+       
+        .inputcenter {
+            text-align: center;
+        }
+        
+        .inputfile {
+            background-color:rgba(204, 255, 204, 0.945);
+            width: 35%;
+        }
+        
+        .button {
+            background-color:rgba(204, 255, 204, 0.945);
+            width: 30%;
+            height: 40px;
+        }
+       
+        .inputlabels {
+            padding: 0 0 0 10px;
+        }
+        
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>homework2-4th exercise</title>
+    </head>
+    <body>
+        <form> 
+            
+            <table border="1" width="700px" cellspacing="4px">
+                <tr class="firstrow">
+                    <td colspan="2"><b>User Form</b></td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Enter Name</td>
+                    <td class="inputcenter"> 
+                        <input class="inputforms" type="text" name="fullname">
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Enter Password</td>
+                    <td class="inputcenter"> 
+                        <input class="inputforms" type="password" name="password">
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Enter Address</td>
+                    <td class="inputcenter">
+                        <textarea class="inputforms" name="address" cols="30" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Select Game</td>
+                    <td class="inputlabels">
+                        <input type="checkbox" name="sportselector" value="Hockey">Hockey <br>
+                        <input type="checkbox" name="sportselector" value="Football">Footbal <br>
+                        <input type="checkbox" name="sportselector" value="Badminton">Badminton <br>
+                        <input type="checkbox" name="sportselector" value="Cricket">Cricket <br>
+                        <input type="checkbox" name="sportselector" value="volleyball">bolleyball <br>
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Gender</td>
+                    <td class="inputlabels">
+                        <input type="radio" name="Gender" value="Male" checked>Male
+                        <input type="radio" name="Gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td class="inputlabels">Select ur age</td>
+                    <td class="inputcenter">
+                        <select class="inputforms">
+                            <option value="selectage">select</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td colspan="2" class="inputcenter">
+                        <input class="inputfile" type="file" name="immage">
+                    </td>
+                </tr>
+                <tr class="otherrows">
+                    <td colspan="2" class="inputcenter">
+                        <button class="button">Click Me</button>
+                        <input class="button" type="reset" value="Reset">
+                        <input class="button" type="submit" Value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
